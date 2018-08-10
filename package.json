@@ -2,7 +2,6 @@
   "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kowalikmichal.github.io/to-do-list/",
   "dependencies": {
     "ajv": "^6.5.2",
     "ls": "^0.2.1",
@@ -23,5 +22,6 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "gh-pages": "^1.2.0",
     "webpack": "^2.7.0"
-  }
+  },
+  "homepage": "https://kowalikmichal.github.io/ToDoList-React"
 }

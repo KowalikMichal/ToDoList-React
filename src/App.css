@@ -139,3 +139,13 @@ button[type="radio"]{
 	padding:0;
 	cursor: pointer;
 }
+
+button[name="deleteThis"] span {
+  pointer-events: none;
+}
+
+button[name="deleteThis"]{
+	background: transparent;
+	border: none;
+	outline:0;
+}

@@ -11,6 +11,7 @@ class ListItem extends Component{
 		this.setState({inputProps: this.props.passedVal});
 	}
 	componentWillReceiveProps(nextProps){
+		if (nextProps === null) return null;
 		const currnetState = new Set (this.state.inputProps);
 		const receiveState = new Set (nextProps.passedVal);
 		const difference = new Set([...receiveState].filter(x => !currnetState.has(x)));
@@ -52,7 +53,7 @@ class ListItem extends Component{
 						<li key={newTask.key}>
 							<input type="checkbox" id={'item'+newTask.itemText} data-key={newTask.itemText} checked={newTask.done} onChange={this.handleChange}/>
 							<label htmlFor={'item'+newTask.itemText}>{newTask.itemText}</label>
-							<button type="button" name="deleteThis" data-index={newTask.key} onClick={this.delete}>❌</button>
+							<button type="button" name="deleteThis" data-index={newTask.key} onClick={this.delete}><span role="img" aria-label="x">❌</span></button>
 						</li>
 					)
 				})}

@@ -18,7 +18,7 @@ class App extends Component {
 	}
 
 	onUpdate = (value) =>{
-		if (value === null) return alert('null');
+		if (value === null) return alert('First you must type new task!');
 		const newItem = {
 			Text: value,
 			done: false,
