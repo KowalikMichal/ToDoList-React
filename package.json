@@ -1,0 +1,27 @@
+{
+  "name": "to-do-list",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://kowalikmichal.github.io/to-do-list/",
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "ls": "^0.2.1",
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.2",
+    "gh-pages": "^1.2.0",
+    "webpack": "^2.7.0"
+  }
+}
