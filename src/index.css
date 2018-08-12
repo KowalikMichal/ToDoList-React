@@ -1,14 +1,6 @@
 body{
-	box-sizing: border-box;
-	background:url('background.jpg') center no-repeat;
-	    background: url('background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     height: 100%;
     overflow: scroll;
-
 	background-size: cover;
 	min-height:100vh;
 	display:flex;
@@ -18,3 +10,28 @@ body{
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 }
 *, *:before, *:after {box-sizing: inherit; }
+
+
+@media screen and (max-width: 640px) {
+	body{
+		box-sizing: border-box;
+		background:url('backgroundSmall.jpeg') center no-repeat;
+		    background: url('backgroundSmall.jpeg') no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	body{
+		box-sizing: border-box;
+		background:url('background.jpg') center no-repeat;
+		    background: url('background.jpg') no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+}
